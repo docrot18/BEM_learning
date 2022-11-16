@@ -44,6 +44,8 @@ body
         align-items: flex-end
 
 .order
+    display: flex
+    flex-direction: column
     margin-top: 80px
     box-sizing: border-box
     height: 668px
@@ -53,6 +55,9 @@ body
     font-family: 'Space Grotesk'
     padding: 32px 32px 32px 32px
     color: #FFFFFF
+    margin-bottom: 128px
+    &:last-child
+        justify-content: flex-end
     & hr
         margin: 32px 0 32px 0
         border: 1px solid #223E4E
@@ -105,10 +110,31 @@ body
                 border-radius: 50%
                 background-color: #DDF0A7
                 margin-right: 16px
-
         &_main li 
             &:before
                 background-color: #162E3C
+    &_footer
+        height: 100%
+        align-items: flex-end
+        display: flex
+        justify-content: center
+    &__button
+        font-family: 'Space Grotesk'
+        font-size: 15px
+        display: flex
+        justify-content: center
+        align-items: center
+        border: 2px solid #DDF0A7
+        border-radius: 64px
+        background-color: #DDF0A7
+        color: #162E3C
+        width: 341px
+        height: 52px
+        &_main
+            border: 2px solid #162E3C
+            background-color: #162E3C
+            color: #FFFFFF
+
 
                 
 
