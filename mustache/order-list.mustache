@@ -1,0 +1,20 @@
+<div class="price__orders-list">
+{{#orders}}
+    <div class={{{class}}}>
+        <div class="order__logo"><img src={{{logo}}}></div>
+        <div class="order__title">{{title}}</div>
+        <div class="order__price_m">{{price_m}}<div>/mo</div></div>
+        <div class="order__price_y">or {{price_y}} yearly</div>
+        <hr>
+        <div class={{{includes_class}}}>
+            <div class="order__includes-text">Includes:</div>
+        <ul>
+        {{#includes}}
+            <li>{{.}}</li>
+        {{/includes}}
+        </ul>
+        </div>
+        <button class={{{button_class}}}>{{button_title}}</button>
+    </div>
+{{/orders}}
+</div>
