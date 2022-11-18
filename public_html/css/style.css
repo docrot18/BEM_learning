@@ -13,6 +13,7 @@ body {
   align-items: center;
   flex-direction: column;
 }
+
 .price__navigation {
   color: #162E3C;
   margin-top: 128px;
@@ -29,6 +30,7 @@ body {
   height: 32px;
   background-color: #DDF0A7;
 }
+
 .price__title {
   color: #162E3C;
   margin-top: 15px;
@@ -36,6 +38,7 @@ body {
   font-size: 48px;
   line-height: 58px;
 }
+
 .price__subtitle {
   margin-top: 24px;
   color: #49616E;
@@ -43,7 +46,8 @@ body {
   font-size: 17px;
   line-height: 27px;
 }
-.price__orders-list {
+
+.price-orders-list {
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
@@ -64,63 +68,69 @@ body {
   color: #FFFFFF;
   margin-bottom: 128px;
 }
-.order:last-child {
-  justify-content: flex-end;
-}
-.order hr {
-  margin: 32px 0 32px 0;
-  border: 1px solid #223E4E;
-}
 .order_main {
   background-color: #DDF0A7;
   height: 732px;
   color: #162E3C;
 }
-.order_main hr {
+
+.order__line {
+  margin: 32px 0 32px 0;
+  border: 1px solid #223E4E;
+}
+.order__line_main {
   border: 1px solid #D1E39E;
 }
+
 .order__logo {
   display: flex;
   justify-content: flex-end;
 }
+
 .order__title {
   margin-top: 32px;
   font-size: 20px;
   line-height: 28px;
   font-family: "Fraunces";
 }
-.order__price_m {
+
+.order__price-month {
   margin-top: 7px;
   display: flex;
   font-family: "Fraunces";
   font-size: 56px;
 }
-.order__price_m div {
+
+.order__price-text {
   display: flex;
   align-items: flex-end;
   font-size: 32px;
   vertical-align: bottom;
 }
-.order__price_y {
+
+.order__price-year {
   margin-top: 8px;
   font-size: 16px;
 }
+
 .order__includes-text {
   font-size: 15px;
   margin-bottom: 24px;
 }
-.order__includes ul {
+
+.order__includes-marker-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.order__includes li {
+
+.order__includes-marker-list-item {
   vertical-align: middle;
   line-height: 24px;
   margin-bottom: 16px;
   font-size: 15px;
 }
-.order__includes li:before {
+.order__includes-marker-list-item:before {
   content: "";
   display: inline-block;
   height: 24px;
@@ -130,16 +140,22 @@ body {
   background-color: #DDF0A7;
   margin-right: 16px;
 }
-.order__includes_main li:before {
+.order__includes-marker-list-item_main:before {
   background-color: #162E3C;
 }
-.order_footer {
+.order__includes-marker-list-item:last-child {
+  margin-bottom: 0px;
+}
+
+.order__footer {
   height: 100%;
   align-items: flex-end;
   display: flex;
   justify-content: center;
 }
+
 .order__button {
+  text-decoration: none;
   font-family: "Space Grotesk";
   font-size: 15px;
   display: flex;

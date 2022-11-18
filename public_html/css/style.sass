@@ -10,38 +10,42 @@ body
     display: flex
     align-items: center
     flex-direction: column
-    &__navigation
-        color: #162E3C
-        margin-top: 128px
-        font-family: 'Space Grotesk'
-        display: flex
-        align-items: center
-        justify-content: center
-        justify-items: center
-        text-align: center
-        font-size: 15px
-        line-height: 24px
-        border-radius: 64px
-        width: 77px
-        height: 32px
-        background-color: #DDF0A7
-    &__title
-        color: #162E3C
-        margin-top: 15px
-        font-family: 'Fraunces'
-        font-size: 48px
-        line-height: 58px
-    &__subtitle
-        margin-top: 24px
-        color:#49616E
-        font-family: 'Space Grotesk'
-        font-size: 17px
-        line-height: 27px  
-    &__orders-list
-        display: flex
-        justify-content: space-evenly
-        flex-direction: row
-        align-items: flex-end
+
+.price__navigation
+    color: #162E3C
+    margin-top: 128px
+    font-family: 'Space Grotesk'
+    display: flex
+    align-items: center
+    justify-content: center
+    justify-items: center
+    text-align: center
+    font-size: 15px
+    line-height: 24px
+    border-radius: 64px
+    width: 77px
+    height: 32px
+    background-color: #DDF0A7
+
+.price__title
+    color: #162E3C
+    margin-top: 15px
+    font-family: 'Fraunces'
+    font-size: 48px
+    line-height: 58px
+
+.price__subtitle
+    margin-top: 24px
+    color:#49616E
+    font-family: 'Space Grotesk'
+    font-size: 17px
+    line-height: 27px  
+
+.price-orders-list
+    display: flex
+    justify-content: space-evenly
+    flex-direction: row
+    align-items: flex-end
 
 .order
     display: flex
@@ -56,84 +60,95 @@ body
     padding: 32px 32px 32px 32px
     color: #FFFFFF
     margin-bottom: 128px
-    &:last-child
-        justify-content: flex-end
-    & hr
-        margin: 32px 0 32px 0
-        border: 1px solid #223E4E
     &_main
         background-color: #DDF0A7
         height: 732px
         color: #162E3C
-        & hr 
-            border: 1px solid #D1E39E
-    &__logo
-        display: flex
-        justify-content: flex-end
-    &__title
-        margin-top: 32px
-        font-size: 20px
-        line-height: 28px
-        font-family: 'Fraunces'
-    &__price_m
-        margin-top: 7px
-        display: flex 
-        font-family: 'Fraunces'
-        font-size: 56px
-        & div 
-            display: flex
-            align-items: flex-end
-            font-size: 32px
-            vertical-align: bottom
-    &__price_y
-        margin-top: 8px
-        font-size: 16px
-    &__includes
-        &-text
-            font-size: 15px
-            margin-bottom: 24px 
-        & ul
-            list-style: none
-            margin:0
-            padding: 0
-        & li
-            vertical-align: middle
-            line-height: 24px 
-            margin-bottom: 16px 
-            font-size: 15px
-            &:before
-                content: ''
-                display: inline-block
-                height: 24px
-                width: 24px
-                vertical-align: middle
-                border-radius: 50%
-                background-color: #DDF0A7
-                margin-right: 16px
-        &_main li 
-            &:before
-                background-color: #162E3C
-    &_footer
-        height: 100%
-        align-items: flex-end
-        display: flex
-        justify-content: center
-    &__button
-        font-family: 'Space Grotesk'
-        font-size: 15px
-        display: flex
-        justify-content: center
-        align-items: center
-        border: 2px solid #DDF0A7
-        border-radius: 64px
+
+.order__line
+    margin: 32px 0 32px 0
+    border: 1px solid #223E4E    
+    &_main
+        border: 1px solid #D1E39E
+
+.order__logo
+    display: flex
+    justify-content: flex-end
+
+.order__title
+    margin-top: 32px
+    font-size: 20px
+    line-height: 28px
+    font-family: 'Fraunces'
+
+.order__price-month
+    margin-top: 7px
+    display: flex 
+    font-family: 'Fraunces'
+    font-size: 56px
+
+.order__price-text
+    display: flex
+    align-items: flex-end
+    font-size: 32px
+    vertical-align: bottom
+
+.order__price-year
+    margin-top: 8px
+    font-size: 16px
+
+.order__includes-text
+    font-size: 15px
+    margin-bottom: 24px 
+
+.order__includes-marker-list
+    list-style: none
+    margin:0
+    padding: 0
+
+.order__includes-marker-list-item
+    vertical-align: middle
+    line-height: 24px 
+    margin-bottom: 16px 
+    font-size: 15px
+    &:before
+        content: ''
+        display: inline-block
+        height: 24px
+        width: 24px
+        vertical-align: middle
+        border-radius: 50%
         background-color: #DDF0A7
-        color: #162E3C
-        width: 341px
-        height: 52px
-        &_main
-            border: 2px solid #162E3C
+        margin-right: 16px
+    &_main 
+        &:before
             background-color: #162E3C
-            color: #FFFFFF
+    &:last-child
+        margin-bottom: 0px
+
+.order__footer
+    height: 100%
+    align-items: flex-end
+    display: flex
+    justify-content: center
+
+.order__button
+    text-decoration: none
+    font-family: 'Space Grotesk'
+    font-size: 15px
+    display: flex
+    justify-content: center
+    align-items: center
+    border: 2px solid #DDF0A7
+    border-radius: 64px
+    background-color: #DDF0A7
+    color: #162E3C
+    width: 341px
+    height: 52px
+    &_main
+        border: 2px solid #162E3C
+        background-color: #162E3C
+        color: #FFFFFF
 
 
                 
