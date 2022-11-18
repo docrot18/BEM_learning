@@ -1,22 +1,22 @@
-<div class="price__orders-list">
+<div class="price-orders-list">
 {{#orders}}
-    <div class={{{class}}}>
-        <div class="order_upper">
-            <div class="order__logo"><img src={{{logo}}}></div>
+    <div class="{{{class}}}">
+        <div class="order__upper">
+            <div class="order__logo"><img src={{{logo}}} alt="#"></div>
             <div class="order__title">{{title}}</div>
-            <div class="order__price_m">{{price_m}}<div>/mo</div></div>
-            <div class="order__price_y">or {{price_y}} yearly</div>
+            <div class="order__price-month">{{price_month}}<div class="order__price-text">/mo</div></div>
+            <div class="order__price-year">or {{price_year}} yearly</div>
             </div>
-            <hr>
-            <div class={{{includes_class}}}>
+            <hr class="{{{line_class}}}">
+            <div class="{{{includes_class}}}">
                 <div class="order__includes-text">Includes:</div>
-            <ul>
-            {{#includes}}
-                <li>{{.}}</li>
-            {{/includes}}
-            </ul>
+                <ul class="order__includes-marker-list">
+                {{#includes}}
+                    <li class="{{{li_class}}}">{{.}}</li>
+                {{/includes}}
+                </ul>
             </div>
-            <div class="order_footer"><a class={{{button_class}}}>{{button_title}}</a></div>
+            <div class="order__footer"><a class="{{{button_class}}}" href="#order">{{button_title}}</a></div>
     </div>
 {{/orders}}
 </div>
