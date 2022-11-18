@@ -124,13 +124,13 @@ body {
   padding: 0;
 }
 
-.order__includes-marker-list-item {
+.includes-list-item {
   vertical-align: middle;
   line-height: 24px;
   margin-bottom: 16px;
   font-size: 15px;
 }
-.order__includes-marker-list-item:before {
+.includes-list-item:before {
   content: "";
   display: inline-block;
   height: 24px;
@@ -140,10 +140,10 @@ body {
   background-color: #DDF0A7;
   margin-right: 16px;
 }
-.order__includes-marker-list-item_main:before {
+.includes-list-item_main:before {
   background-color: #162E3C;
 }
-.order__includes-marker-list-item:last-child {
+.includes-list-item:last-child {
   margin-bottom: 0px;
 }
 
